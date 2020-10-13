@@ -64,3 +64,11 @@
    1. For further control command line options, see the output of
    
     $CHSHROOT/bin/gnu/chemsh -h
+
+## STEP 5 Further modifications
+
+  * There are three ways to set your own default arguments:
+
+1. modifying the `$CHSHROOT/bin/gnu/chemsh` script. 
+1. Note also that your latest arguments are saved to ~/.chemsh, and you can invoke these to overide the default with an argument listed there
+1. You can encode your preferences in the `mahti.sh` submission script
