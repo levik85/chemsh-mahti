@@ -1,0 +1,18 @@
+#1) StdEnv   2) intel/19.1.1   3) openmpi/4.0.3   4) cmake/3.16.2
+
+FC = gfortran
+MPIFC = mpif90
+FFLAGS = -O3 -march=native -ffree-line-length-none -g -fPIC
+FMINFLAGS = -O0 -march=native -ffree-line-length-none -g -fPIC
+F90MINFLAGS =  $(FMINFLAGS)
+F90FLAGS = $(FFLAGS)
+CC = gcc
+CCFLAGS = -O3 -march=native -DNDEBUG -funroll-loops -fPIC
+USE_LIBXC = yes
+USE_SPGLIB = yes
+SCALAPACK = -L/appl/spack/v014/install-tree/gcc-9.3.0/openblas-0.3.10-ox6ff3/lib -L/appl/spack/v014/install-tree/gcc-9.3.0/netlib-scalapack-2.1.0-xeslcn/lib -lopenblas -lscalapack
+USE_MPI = yes
+#ARCHITECTURE = AMD64_AVX
+USE_C_FILES = yes
+#ELPA2_KERNEL = AVX
+
