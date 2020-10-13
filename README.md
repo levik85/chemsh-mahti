@@ -37,7 +37,7 @@
 
 ## STEP 2: Edit files
 
-    Edit $CHSHROOT/setup
+    Edit `$CHSHROOT/setup`
     search for `-O` add `type=int,` to the argument list on the succeeeding lines (e.g. line 163)
     on line 772 (or 773 after the above edit) replace 'make' with 'make VERBOSE=1'
      
@@ -46,7 +46,7 @@
 
 ## STEP 3: compile
 
-    in $CHSHROOT issue
+    in `$CHSHROOT` issue
  
      `./setup -O 3 -j 24 --platform mahti --gulp $GULPROOT  --gulp-version 5.2 --fhiaims $AIMSROOT/lib/libaims.$AIMS_VN.scalapack.mpi.so`
 
