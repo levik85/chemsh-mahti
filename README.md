@@ -47,8 +47,9 @@
 
   * Go to `$CHSHROOT` and issue
  
-    ./setup -O 3 -j 24 --platform mahti --gulp $GULPROOT  --gulp-version 5.2 --fhiaims $AIMSROOT/lib/libaims.$AIMS_VN.scalapack.mpi.so
-
+'''
+ ./setup -O 3 -j 24 --platform mahti --gulp $GULPROOT  --gulp-version 5.2 --fhiaims $AIMSROOT/lib/libaims.$AIMS_VN.scalapack.mpi.so
+'''
 
 ## STEP 4: run
 
