@@ -56,8 +56,10 @@
    * The hook in dl-find is not working
 
    1. Go to the directory of the validation test you are interested in and issue
+   
     $CHSHROOT/bin/gnu/chemsh --submit -pl mahti -np np -A your_account -J jobname -N partition file_to_test.py
 
    1. Check output: jobname.err and jobname.log
    1. For further control command line options, see the output of
+   
     $CHSHROOT/bin/gnu/chemsh -h
