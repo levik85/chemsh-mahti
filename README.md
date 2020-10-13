@@ -39,19 +39,19 @@
 
 ## STEP 2: Edit files
 
-    * In `$CHSHROOT/setup` search for `-O` and add `type=int,` to the argument list on the succeeeding lines (e.g. line 163)
-    -- on line 772 (or 773 after the above edit) replace 'make' with 'make VERBOSE=1'
+  * In `$CHSHROOT/setup` search for `-O` and add `type=int,` to the argument list on the succeeeding lines (e.g. line 163)
+  -- on line 772 (or 773 after the above edit) replace 'make' with 'make VERBOSE=1'
 
-     This will allow you to identify whether you miss any occurences of lapack in the following step
+   This will allow you to identify whether you miss any occurences of lapack in the following step
      
-     * In `$CHSHROOT/chemsh/` and all its subdirectories search through the `CMakeLists.txt` files and whereever you find
-     `target_link_libraries(arg1 arg2 ...)` where any of the arguments is `lapack`, change it to `openblas`
+   * In `$CHSHROOT/chemsh/` and all its subdirectories search through the `CMakeLists.txt` files and whereever you find
+   `target_link_libraries(arg1 arg2 ...)` where any of the arguments is `lapack`, change it to `openblas`
 
 ## STEP 3: compile
 
-    * Go to `$CHSHROOT` and issue
+  * Go to `$CHSHROOT` and issue
  
-     `./setup -O 3 -j 24 --platform mahti --gulp $GULPROOT  --gulp-version 5.2 --fhiaims $AIMSROOT/lib/libaims.$AIMS_VN.scalapack.mpi.so`
+  `./setup -O 3 -j 24 --platform mahti --gulp $GULPROOT  --gulp-version 5.2 --fhiaims $AIMSROOT/lib/libaims.$AIMS_VN.scalapack.mpi.so`
 
 
 ## STEP 4: run
