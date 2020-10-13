@@ -25,7 +25,7 @@ def init(args, utils=None, load=[], unload=[]):
     '''
     "utils" is not passed - not sure how this is supposed to work, load the necessary modules manually
     '''
-    print("autoloading of modules disabled - issue 'module load cmake intel'")
+    print("autoloading of modules disabled - issue 'module load cmake netlib-scalapack'")
 
 #    from os             import environ, path, sep
 #    from re             import sub
